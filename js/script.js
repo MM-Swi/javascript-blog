@@ -1,6 +1,7 @@
 'use strict';
 
 function titleClickHandler(event) {
+    const clickedElement = this;
     console.log('Link was clicked!');
 
     /* remove class 'active' from all article links  */
@@ -12,6 +13,11 @@ function titleClickHandler(event) {
     }
 
     /* add class 'active' to the clicked link */
+    
+    let (activeArticle of activeArticles) {
+        activeArticle.classList.add('active');
+    }
+    console.log('clickedElement:', clickedElement);
 
     /* get 'href' attribute from the clicked link */
 
